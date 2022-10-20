@@ -1,0 +1,35 @@
+{{#if all}}
+  <div class="list__header card">
+    <div class="product__list--name product__list--item">
+      <p>Nombre</p>
+    </div>
+    <div class="product__list--price product__list--item">
+      <p>Precio</p>
+    </div>
+    <div class="product__list--image product__list--item">
+      <p>Imagen</p>
+    </div>
+  </div>
+
+  <div class="list__body">
+    <div class="list__body--container">
+      {{#each all}}
+        <div class="list__body--row">
+          <div class="list__body--item list__body--item-name">
+            <p>{{this.title}}</p>
+          </div>
+          <div class="list__body--item list__body--item-price">
+            <p>{{this.price}}</p>
+          </div>
+          <div class="list__body--item list__body--item-photo">
+            <img src="{{this.thumbnail}}" alt="{{this.title}}" />
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+{{else}}
+  <div class="notfund">
+    <h4>No hay productos para mostrar</h4>
+  </div>
+{{/if}}

@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "email": "jo.test@mail.com",
+    "date": "18/7/2022 11:13:23",
+    "messageText": "This is the second message"
+  },
+  {
+    "id": 2,
+    "email": "seiya@cosmos.com",
+    "date": "18/7/2022 11:20:47",
+    "messageText": "Give me your strong Pegasus"
+  },
+  {
+    "id": 3,
+    "email": "juanperez@geemail.com",
+    "date": "29/8/2022 00:56:56",
+    "messageText": "This is another message"
+  }
+]

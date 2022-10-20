@@ -1,0 +1,17 @@
+<ul>
+  {{#if allMessages}}
+
+    {{#each allMessages}}
+      <li class="message">
+        <div class="message__box">
+          <span class="message__email">{{this.email}}</span>
+          <span class="message__date">{{this.date}}</span>
+        </div>
+        <div class="message__text">{{this.messageText}}</div>
+      </li>
+    {{/each}}
+
+  {{else}}
+    <li>No hay mensajes para mostrar</li>
+  {{/if}}
+</ul>

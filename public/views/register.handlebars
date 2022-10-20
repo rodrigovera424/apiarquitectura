@@ -1,0 +1,84 @@
+<html>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./../css/normalize.css" rel="stylesheet" />
+    <link href="./../css/app.css" rel="stylesheet" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"
+      integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <title>Products - WebSocket</title>
+  </head>
+
+  <body>
+
+    <div id="container" class="container bg-light p-3 rounded m-0">
+      <div class="card p-1 m-0 flex">
+
+        <form action="/register" method="post">
+          <h2 class="text-primary">Registro de usuario</h2>
+
+          <div class="mb-3 flex flex-col form-login">
+            <label for="name" class="form-label">Ingrese nombre</label>
+            <input
+              id="name"
+              type="text"
+              class="form-control"
+              name="name"
+              required
+            />
+          </div>
+
+          <div class="mb-3 flex flex-col form-login">
+            <label for="email" class="form-label">Ingrese email</label>
+            <input
+              id="email"
+              type="text"
+              class="form-control"
+              name="username"
+              required
+            />
+          </div>
+          <div class="mb-3 flex flex-col form-login">
+            <label for="password" class="form-label">Ingrese password</label>
+            <input
+              id="password"
+              type="password"
+              class="form-control"
+              name="password"
+              required
+            />
+          </div>
+
+          <div class="flex items-center justify-between">
+            <div class="form__group--button">
+              <button type="submit" class="btn btn-success">Registrar</button>
+            </div>
+
+            <a href="/" class="btn btn-primary">Login</a>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </body>
+
+</html>

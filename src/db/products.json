@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "MacBook Pro 13”",
+    "price": "560000",
+    "thumbnail": "https://www.apple.com/v/macbook-pro-13/m/images/overview/compare/compare_mbp_13__givmvd62t5ua_large_2x.png"
+  },
+  {
+    "id": 2,
+    "title": "Smart TV 4K UHD Samsung 50\"",
+    "price": "2000",
+    "thumbnail": "https://images.fravega.com/f300/d7ca24bf5639a7db78c31aa9fa963be8.jpg.webp"
+  },
+  {
+    "id": 3,
+    "title": "Galaxy Watch4 Bluetooth (40mm) Negro",
+    "price": "58000",
+    "thumbnail": "https://samsungar.vtexassets.com/arquivos/ids/173308-1200-auto?width=1200&height=auto&aspect=true"
+  },
+  {
+    "id": 4,
+    "title": "Celular Samsung Z Flip4 128 GB Pink",
+    "price": "219999",
+    "thumbnail": "https://images.fravega.com/f300/65c874d944af2707c3824cb347e3f6ea.jpg.webp"
+  },
+  {
+    "id": 5,
+    "title": "Kugel",
+    "price": "185000",
+    "thumbnail": "https://thonet-vander.com/ar/wp-content/uploads/Kugel-00.jpg"
+  }
+]

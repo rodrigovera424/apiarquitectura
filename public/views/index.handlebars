@@ -1,0 +1,116 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./../css/normalize.css" rel="stylesheet" />
+    <link href="./../css/app.css" rel="stylesheet" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"
+      integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <title>Products - WebSocket</title>
+  </head>
+
+  <body>
+    <div id="welcome" class="m-0">
+      <div class="welcome__message">
+        <h2 class="text-success" style="display: inline">
+          Bienvenido
+          {{usuario}}</h2>
+        <a class="button logout" href="/logout"> Salir </a>
+      </div>
+    </div>
+    <div id="container" class="m-0">
+      <div id="form__content" class="m-0 p-1">
+        <form id="formNewProduct" class="card">
+          <h1>Ingrese Producto</h1>
+          <div class="form__group">
+            <label for="nombre">Nombre</label>
+            <input
+              type="text"
+              name="nombre"
+              id="nombre"
+              placeholder="Camera Nikon"
+              value=""
+              required
+            />
+          </div>
+          <div class="form__group">
+            <label for="precio">Precio</label>
+            <input
+              type="text"
+              name="precio"
+              id="precio"
+              placeholder="120000"
+              required
+            />
+          </div>
+          <div class="form__group">
+            <label for="imagen">Foto URL</label>
+            <input
+              type="text"
+              name="cantidad"
+              id="imagen"
+              placeholder="URL  de la imágen"
+              required
+            />
+          </div>
+          <div class="form__group">
+            <div class="form__group--button">
+              <button type="submit">Enviar</button>
+            </div>
+          </div>
+        </form>
+
+        <div class="product__list">
+          <h2>Listado de productos</h2>
+          <div id="productList"></div>
+        </div>
+      </div>
+
+      <div id="messages__container" class="m-0 p-1">
+        <h2>Centro de mensajes</h2>
+
+        <form id="messages">
+          <div class="messages__input--name form__group">
+            <input type="text" placeholder="email@mail.com" name="email" />
+          </div>
+
+          <div class="messages__wrapper">
+            <div>
+              <textarea
+                id="messagesBox"
+                type="text"
+                placeholder="message"
+                name="message"
+                required
+                class="form__group"
+              ></textarea>
+              <button type="submit">Enviar</button>
+            </div>
+          </div>
+
+          <div id="menssageContainer" class="messages__list"></div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./../js/app.js"></script>
+  </body>
+</html>
